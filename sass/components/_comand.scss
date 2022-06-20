@@ -1,0 +1,88 @@
+.comand__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+}
+
+.comand {
+    background: #F5F4FA;
+}
+
+.comand__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comand__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+.comand__topic {
+
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $title-text-color;
+    text-align: center;
+}
+
+.comand__item {
+    width: 270px;
+    background: $primary-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+.comand__about {
+    text-align: center
+}
+
+.social {
+    display: flex;
+
+    justify-content: center;
+}
+
+.comand__social {
+    margin-top: 16px;
+}
+
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    fill: $icons-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover, &:focus {
+        fill: $primary-white-color;
+        background-color: $accent-color;
+    }
+}
+
+.social__item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
