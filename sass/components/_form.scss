@@ -1,0 +1,50 @@
+.form {
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $primary-white-color;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    &__email {
+        display: block;
+        margin-bottom: 20px;
+        padding: 15px 16px;
+       
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px
+    }
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__action {
+        margin-right: 10px;
+    }
+}
+
+.form__email {
+    &:placeholder-shown {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+        background-color: #2F303A;
+
+    }
+}
+
