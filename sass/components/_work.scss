@@ -1,13 +1,14 @@
 .work {
-    @media screen and (max-width: 480px) {
-       display: none;
-      //  background-color: blueviolet;
-   }
+display: none;
 
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//     // background-color: greenyellow;
-//   }
+   //  @media screen and (max-width: 480px) {
+   //     display: none;
+   //    //  background-color: blueviolet;
+   // }
+
+  @media screen and (min-width: 768px) {
+    
+  }
 
 //   @media screen and (min-width: 1140px) {
 //     width: 1140px;
