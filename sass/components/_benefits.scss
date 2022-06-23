@@ -50,21 +50,43 @@
   }
 
   .benefits__item {
-    &:not(:last-child) {
-        margin-bottom: 0px;}
-
     flex-basis: calc((100% - 30px) / 2);
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
 
     &:nth-child(2n + 1) {
       margin-right: 30px;
     }
 
     &:nth-child(-n + 2) {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
     }
   }
 
   .benefits__topic {
-        text-align: left;
-    }
+    text-align: left;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .benefits__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+
+    &:nth-child(2n + 1) {
+      margin-right: 0px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+
+
+} 

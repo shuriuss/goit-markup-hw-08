@@ -50,11 +50,36 @@
 
 @media screen and (min-width: 768px) {
     .form__email {
-        &:placeholder-shown {
-        width: 450px;
         margin-right: auto;
         margin-left: auto;
+
+        &:placeholder-shown {
+        width: 450px;
+        
         }
 
     }
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    .form__title {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .form__box {
+        display: flex;
+    }
+
+    .form__email {
+        margin-bottom: 0;
+        margin-right: 10px;
+
+        &:placeholder-shown {
+        width: 358px;
+    }
+}
+
 }

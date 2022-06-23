@@ -1,76 +1,87 @@
-.comand  {
-    background-color: #F5F4FA;
+.comand {
+  background-color: #f5f4fa;
 }
 
 .comand__title {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
-   
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $title-text-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
 }
 
 .comand__item {
-    padding-bottom: 24px;
-    background-color: $primary-white-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px; 
-
+  padding-bottom: 24px;
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .comand__item:not(:last-child) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .comand__topic {
-    margin-top: 30px;
+  margin-top: 30px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
 }
-
-
 
 .comand__about {
-    margin-top: 10px;
+  margin-top: 10px;
 
-    font-size: 16px;
-    line-height: 1.19;
-    
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-
 
 @media screen and (min-width: 768px) {
-    .comand__list {
-        display: flex;
-        flex-wrap: wrap;
-       
-    }
+  .comand__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .comand__item {
-        flex-basis: calc((100% - 30px) / 2);
-    }
+  .comand__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 
-    .comand__item:not(:last-child) {
+  .comand__item:not(:last-child) {
     margin-bottom: 0px;
+  }
+
+  .comand__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+
+  
 }
 
-    .comand__item:nth-child(2n+1) {
-        margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .comand__list {
+    flex-wrap: nowrap;
+  }
 
-}
+   .comand__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
 
-    .comand__item:nth-child(-n+2) {
-    margin-bottom: 30px;
-}
+  .comand__item:nth-child(2n + 1) {
+    margin-right: 0px;
+  }
+
+   .comand__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
