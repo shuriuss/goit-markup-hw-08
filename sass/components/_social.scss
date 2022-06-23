@@ -17,6 +17,8 @@
   border-radius: 50%;
   background-color: transparent;
   fill: $icons-color;
+
+  
 }
 
 .comand__social {
@@ -30,7 +32,7 @@
 @media screen and (min-width: 1200px) {
   .social__link {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .social__link:hover,
