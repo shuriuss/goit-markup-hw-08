@@ -635,6 +635,10 @@ a {
     margin-bottom: 0px;
   }
 
+  .comand__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+
   .comand__item:nth-child(2n+1) {
     margin-right: 30px;
   }
@@ -656,6 +660,10 @@ a {
 
   .comand__item:not(:last-child) {
     margin-right: 30px;
+  }
+
+  .comand__item:nth-child(-n+2) {
+    margin-bottom: 0px;
   }
 }
 .social {
