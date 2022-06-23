@@ -363,6 +363,7 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 2;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1329,6 +1330,29 @@ a {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.conteiner.portfolio {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .examples__item {
   max-width: 450px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1388,7 +1412,7 @@ a {
 }
 
 .examples__chapter {
-  ont-size: 16px;
+  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
@@ -1398,6 +1422,52 @@ a {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  border: #EEEEEE solid 1px;
+  border: #eeeeee solid 1px;
   border-top: none;
+}
+
+@media screen and (min-width: 768px) {
+  .examples {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+
+  .examples__title {
+    min-height: 72px;
+  }
+
+  .examples__item {
+    max-width: 354px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+  .examples__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples__title {
+    min-height: 0;
+  }
+
+  .examples__item {
+    max-width: 370px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+  .examples__item:nth-child(2n+1) {
+    margin-right: 0;
+  }
+  .examples__item:not(:nth-child(3n+3)) {
+    margin-right: 30px;
+  }
+  .examples__item:not(:nth-child(-n+6)) {
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

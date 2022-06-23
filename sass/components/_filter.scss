@@ -44,3 +44,11 @@
 .filter__item {
     margin-bottom: 8px;
 }
+
+
+
+@media screen and (min-width: 768px) {
+    .filter {
+        justify-content: center;
+    }
+}
