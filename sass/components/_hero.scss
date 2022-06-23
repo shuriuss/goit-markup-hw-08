@@ -1,25 +1,65 @@
 .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-   
-    text-align: center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), 
-    rgba(0, 0, 0, 0.1));
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+  padding-top: 118px;
+  padding-bottom: 118px;
 
+  text-align: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url('../../images/mobil/mob-header1x.jpg');
+  background-size: 480px 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url('../../images/mobil/mob-header2x.jpg');
+  }
+}
 
 .hero__title {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-    color: $primary-white-color;
+  color: $primary-white-color;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url('../../images/tablet/tab-header1x.jpg');
+    background-size: 768px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url('../../images/tablet/tab-header2x.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url('../../images/desktop/desk-header1x.jpg');
+    background-size: 1600px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url('../../images/desktop/desk-header2x.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
