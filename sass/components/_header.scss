@@ -253,6 +253,9 @@
 
   .contact__mail,
   .contact__tel {
+    display: flex;
+    align-items: center;
+
     &:hover,
     &:focus {
       color: $accent-color;
