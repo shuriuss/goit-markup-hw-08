@@ -77,6 +77,9 @@
 }
 
 .contact {
+  display: flex;
+  flex-direction: column-reverse;
+
   position: absolute;
   bottom: 134px;
   left: 40px;
@@ -99,6 +102,8 @@
   }
 
   @media screen and (max-width: 768px) {
+    
+
     &__svg {
       display: none;
     }
@@ -108,7 +113,7 @@
     position: static;
 
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 
     &__mail,
     &__tel {
@@ -126,7 +131,7 @@
 }
 
 .contact_item {
-  &:first-child {
+  &:last-child {
     margin-bottom: 32px;
   }
 
@@ -135,11 +140,11 @@
     align-items: center;
 
     &:first-child {
-      margin-bottom: 0px;
+      margin-bottom: 10px;
     }
 
     &:last-child {
-      margin-bottom: 10px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -248,7 +253,7 @@
   }
 
   .contact {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   .contact__mail,
@@ -264,7 +269,7 @@
   }
 
   .contact_item {
-    &:last-child {
+    &:first-child {
       margin-bottom: 0px;
       margin-right: 30px;
     }

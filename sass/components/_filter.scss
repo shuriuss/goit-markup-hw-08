@@ -50,11 +50,16 @@
 @media screen and (min-width: 768px) {
     .filter {
         justify-content: center;
+        margin-bottom: 30px;
     }
 }
 
 
 @media screen and (min-width: 1200px) {
+
+    .filter {
+        margin-bottom: 50px;
+    }
     
     .filter__button {
     &:focus, &:hover {

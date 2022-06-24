@@ -169,6 +169,13 @@ a {
 }
 
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   position: absolute;
   bottom: 134px;
   left: 40px;
@@ -197,9 +204,9 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contact__mail, .contact__tel {
     font-size: 14px;
@@ -213,7 +220,7 @@ a {
   }
 }
 
-.contact_item:first-child {
+.contact_item:last-child {
   margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
@@ -226,10 +233,10 @@ a {
             align-items: center;
   }
   .contact_item:first-child {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
   .contact_item:last-child {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 }
 
@@ -333,9 +340,9 @@ a {
 
   .contact {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .contact__mail,
@@ -354,7 +361,7 @@ a {
     fill: #2196F3;
   }
 
-  .contact_item:last-child {
+  .contact_item:first-child {
     margin-bottom: 0px;
     margin-right: 30px;
   }
@@ -453,6 +460,12 @@ a {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/desktop/desk-header2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 .button {
@@ -580,7 +593,7 @@ a {
   .work__title {
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
@@ -633,10 +646,10 @@ a {
 }
 
 .comand__title {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.18;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -762,6 +775,7 @@ a {
 
 .social__link--color {
   background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -777,10 +791,10 @@ a {
   }
 }
 .clients__title {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.18;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -900,9 +914,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1407,9 +1420,14 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+
   .filter__button:focus, .filter__button:hover {
     background-color: #2196F3;
     color: #ffffff;
