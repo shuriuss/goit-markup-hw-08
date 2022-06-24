@@ -1421,7 +1421,7 @@ a {
 }
 
 .examples__item {
-  max-width: 450px;
+  max-width: 100%;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1435,6 +1435,11 @@ a {
 .examples__box {
   position: relative;
   overflow: hidden;
+}
+
+.examples__img {
+  max-width: 100%;
+  height: auto;
 }
 
 .examples__hover {

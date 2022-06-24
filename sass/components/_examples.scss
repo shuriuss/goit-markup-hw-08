@@ -15,7 +15,7 @@
 }
 
 .examples__item {
-  max-width: 450px;
+  max-width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -24,15 +24,22 @@
 }
 
 .examples__box {
+  
   position: relative;
   overflow: hidden;
 
-//   &>img {
+  
+}
+
+
+.examples__img {
+  
+  max-width: 100%;
+  height: auto;
 //     width: 100%;
 //     object-fit: contain;
 //     object-position: center;
-//   }
-}
+  }
 
 .examples__hover {
   position: absolute;
