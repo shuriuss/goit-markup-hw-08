@@ -648,10 +648,10 @@ a {
 }
 
 .comand__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -719,6 +719,12 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .comand__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+
   .comand__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -793,10 +799,10 @@ a {
   }
 }
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -871,6 +877,12 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+
   .clients__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
