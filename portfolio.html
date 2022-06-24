@@ -22,8 +22,9 @@
   </head>
 
   <body>
-    <header class="header conteiner">
-      <a href="./index.html" lang="en" class="logo">
+    <header class="header ">
+      <div class="header conteiner">
+        <a href="./index.html" lang="en" class="logo">
         <span class="logo--accent">Web</span>Studio
       </a>
 
@@ -31,27 +32,25 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="./index.html" class="nav__link">Студия</a></li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--active">Портфолио</a>
-            </li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--active">Портфолио</a></li>
             <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
 
           <ul class="contact">
+             <li class="contact_item">
+              <a href="mailto:info@devstudio.com" class="contact__mail">
+                <svg width="16" height="12" class="contact__svg">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
             <li class="contact_item">
               <a href="tel:+38096111111" class="contact__tel">
                 <svg width="12" height="16" class="contact__svg">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
-              >
-            </li>
-            <li class="contact_item">
-              <a href="mailto:info@devstudio.com" class="contact__mail">
-                <svg width="16" height="12" class="contact__svg">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
               >
             </li>
           </ul>
@@ -64,6 +63,8 @@
           </ul>
         </nav>
       </div>
+      </div>
+      
 
       <button
         type="button"
